@@ -20,23 +20,23 @@
                 default_layer {
 /* QWERTY
  * .----------------------------------------------------------------------------------------------------------------------.
- * |  ESC |   1  |   2  |   3  |   4  |   5  |  -   |                    |  =  |   6  |   7  |   8  |   9  |   0  | PScr |
+ * |  ESC |   1  |   2  |   3  |   4  |   5  | Home  |                   | End      6  |   7  |   8  |   9  |   0  |  -   |
  * |------+------+------+------+------+------+------+--------------------+------+------+------+------+------+------+------|
- * | Tab  |   Q  |   W  |   E  |   R  |   T  |  [  |                    |  ]   |   Y  |   U  |   I  |   O  |   P  |  \   |
+ * | Tab  |   Q  |   W  |   E  |   R  |   T  |  [   |                    |  ]   |   Y  |   U  |   I  |   O  |   P  |  \   |
  * |------+------+------+------+------+------+------+--------------------+------+------+------+------+------+------+------|
- * |   `  |   A  |   S  |   D  |   F  |   G  | Del  |                    | RAlt |   H  |   J  |   K  |   L  |   ;  |  '   |
+ * |   `  |   A  |   S  |   D  |   F  |   G  |  -   |                    |  =   |   H  |   J  |   K  |   L  |   ;  |  '   |
  * |------+------+------+------+------+------+---------------------------+------+------+------+------+------+------+------|
- * | Shift|   Z  |   X  |   C  |   V  |   B  | End  |                    | Home |   N  |   M  |   ,  |   .  |   /  | Shift|
+ * | Shift|   Z  |   X  |   C  |   V  |   B  | Del  |                    | Home |   N  |   M  |   ,  |   .  |   /  | Shift|
  * |-------------+------+------+------+------+------+------+------+------+------+------+------+------+------+-------------|
- * | Ctrl | Win  | PGDN | Alt  |||||||| Del | Space| Lower|||||||| Raise| Enter| Bksp ||||||||      | PGUP | Ins  | RCtrl|
+ * | Ctrl | Win  | PGDN | Alt  |||||||| Shift| Space| Lower|||||||| Raise| Enter| Bksp |||||||| LARW | DARW | UARW | RARW |
  * .----------------------------------------------------------------------------------------------------------------------.
  */
                         bindings = <
-&kp  ESC      &kp  N1       &kp  N2       &kp  N3       &kp  N4       &kp  N5       &kp  MINUS             &kp  EQUAL    &kp  N6       &kp  N7       &kp  N8       &kp  N9       &kp  N0       &kp  PSCRN
-&kp  TAB      &kp  Q        &kp  W        &kp  E        &kp  R        &kp  T        &kp   LBKT             &kp  RBKT    &kp  Y        &kp  U        &kp  I        &kp  O        &kp  P        &kp  BSLH
-&kp  GRAVE    &kp  A        &kp  S        &kp  D        &kp  F        &kp  G        &kp  DEL               &kp  RALT    &kp  H        &kp  J        &kp  K        &kp  L        &kp  SEMI     &kp  SQT
-&kp  LSHFT    &kp  Z        &kp  X        &kp  C        &kp  V        &kp  B        &kp  END               &kp  HOME     &kp  N        &kp  M        &kp  COMMA    &kp  DOT      &kp  SLASH    &kp  RSHFT
-&kp  LCTRL    &kp  LMETA    &kp  PG_DN    &kp  LALT     &kp  DEL    &kp  SPACE    &mo  LOWER             &mo  RAISE    &kp  RET      &kp  BSPC     &none         &kp  PG_UP    &kp  INS      &kp  RCTRL
+&kp  ESC      &kp  N1       &kp  N2       &kp  N3       &kp  N4       &kp  N5       &kp  HOME             &kp  END      &kp  N6       &kp  N7       &kp  N8       &kp  N9       &kp  N0       &kp  MINUS
+&kp  TAB      &kp  Q        &kp  W        &kp  E        &kp  R        &kp  T        &kp  LBKT             &kp  RBKT     &kp  Y        &kp  U        &kp  I        &kp  O        &kp  P        &kp  BSLH
+&kp  GRAVE    &kp  A        &kp  S        &kp  D        &kp  F        &kp  G        &kp  MINUS            &kp  EQUAL    &kp  H        &kp  J        &kp  K        &kp  L        &kp  SEMI     &kp  SQT
+&kp  LSHFT    &kp  Z        &kp  X        &kp  C        &kp  V        &kp  B        &kp  DEL              &kp  HOME     &kp  N        &kp  M        &kp  COMMA    &kp  DOT      &kp  SLASH    &kp  RSHFT
+&kp  LCTRL    &kp  LMETA    &kp  PG_DN    &kp  LALT     &kp  LSHFT    &kp  SPACE    &mo  LOWER            &mo  RAISE    &kp  RET      &kp  BSPC     &kp &LARW     &kp  DARW     &kp  UARW     &kp  RARW
                         >;
                 };
                 lower_layer {
