@@ -28,7 +28,7 @@
  * |------+------+------+------+------+------+---------------------------+------+------+------+------+------+------+------|
  * | Shift|   Z  |   X  |   C  |   V  |   B  | Del  |                    | Home |   N  |   M  |   ,  |   .  |   /  | Shift|
  * |-------------+------+------+------+------+------+------+------+------+------+------+------+------+------+-------------|
- * | Ctrl | Win  | PGDN | Alt  |||||||| Shift| Space| Lower|||||||| Bksp | Enter| Raise ||||||| LARW | DARW | UARW | RARW |
+ * | Ctrl | Win  | PGDN | Alt  |||||||| Lower| Space| Shift|||||||| Bksp | Enter| Raise ||||||| LARW | DARW | UARW | RARW |
  * .----------------------------------------------------------------------------------------------------------------------.
  */
                         bindings = <
@@ -36,7 +36,7 @@
 &kp  TAB      &kp  Q        &kp  W        &kp  E        &kp  R        &kp  T        &kp  LBKT             &kp  RBKT     &kp  Y        &kp  U        &kp  I        &kp  O        &kp  P        &kp  BSLH
 &kp  GRAVE    &kp  A        &kp  S        &kp  D        &kp  F        &kp  G        &kp  MINUS            &kp  EQUAL    &kp  H        &kp  J        &kp  K        &kp  L        &kp  SEMI     &kp  SQT
 &kp  LSHFT    &kp  Z        &kp  X        &kp  C        &kp  V        &kp  B        &kp  DEL              &kp  HOME     &kp  N        &kp  M        &kp  COMMA    &kp  DOT      &kp  SLASH    &kp  RSHFT
-&kp  LCTRL    &kp  LMETA    &kp  PG_DN    &kp  LALT     &kp  LOWER    &kp  SPACE    &mo  LSHFT            &mo  BSPC    &kp  RET       &kp  RAISE    &kp  LARW     &kp  DARW     &kp  UARW     &kp  RARW
+&kp  LCTRL    &kp  LMETA    &kp  PG_DN    &kp  LALT     &mo  LOWER    &kp  SPACE    &kp  LSHFT            &kp  BSPC    &kp  RET       &mo  RAISE    &kp  LARW     &kp  DARW     &kp  UARW     &kp  RARW
                         >;
                 };
                 lower_layer {
